@@ -24,8 +24,8 @@ export const Footer = styled.footer`
 export const Section = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 40px;
-  padding: 20px;
+  gap: 50px;
+  /* padding: 20px 0; */
   margin-top: 20px;
 
   @media (max-width: 1024px) {

@@ -7,10 +7,10 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     margin:0;
-    font-family: 'Open-Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     background-color: ${props => props.theme.colors.default};
-    color: #020817;
+    color: ${props => props.theme.colors.fontColor}
   }
 
   h1,h2,h3,h4,h5,h6 {
@@ -34,6 +34,7 @@ const theme = {
     darkCyan: 'hsl(192, 100%, 9%)',
     grayishBlue: 'hsl(208, 11%, 55%)',
     default: 'hsl(0, 0%, 100%)',
+    fontColor: '#020817',
   },
   container: {
     width: '1440px',
