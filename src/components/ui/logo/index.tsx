@@ -5,7 +5,7 @@ type LogoProps = {
 export default function Logo({ variant = 'default' }: LogoProps) {
   return (
     <>
-      <span className="sr-only">Assembly Inc.</span>
+      {/* <span className="sr-only">Huddle Inc.</span> */}
       <svg width={240} height={39} xmlns="http://www.w3.org/2000/svg">
         <g fill="none">
           <path
