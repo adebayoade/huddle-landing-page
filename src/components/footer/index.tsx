@@ -3,7 +3,7 @@ import Logo from '../ui/logo';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Community from '../../pages/home/community';
-import { Copy, Footer as StyledFooter, Wrapper } from './footer.styles';
+import { Copy, Footer as StyledFooter, Section } from './footer.styles';
 import Container from '../ui/container';
 
 export default function Footer() {
@@ -11,8 +11,8 @@ export default function Footer() {
     <StyledFooter>
       <Community />
       <Container>
-        <Logo />
-        <Wrapper>
+        <Logo variant="white" />
+        <Section>
           <Stack spacing="30px" direction="column">
             <Stack spacing="20px">
               <img src="/icon-location.svg" alt="" />
@@ -33,13 +33,13 @@ export default function Footer() {
             </Stack>
           </Stack>
 
-          <Stack direction="column" spacing="20px">
+          <Stack direction="column" spacing="30px">
             <Link to="/">About Us</Link>
             <Link to="/">What We Do</Link>
             <Link to="/">FAQ</Link>
           </Stack>
 
-          <Stack direction="column" spacing="20px">
+          <Stack direction="column" spacing="30px">
             <Link to="/">Career</Link>
             <Link to="/">Blog</Link>
             <Link to="/">Contact Us</Link>
@@ -58,9 +58,13 @@ export default function Footer() {
               <FaInstagram size={25} />
             </Link>
           </Stack>
-        </Wrapper>
+        </Section>
 
         <Copy>
+          <Link className="has-line-after" to="mailto:me@adebayoade.com">
+            me@adebayoade.com
+          </Link>
+          <br />
           <span>&copy; Copyright 2018 Huddle. All rights reserved.</span>
         </Copy>
       </Container>

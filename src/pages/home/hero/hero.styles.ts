@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  background-image: url('/public/bg-hero-desktop.svg');
+  background-color: ${({ theme }) => theme.colors.poleCyan};
 `;
 
 export const HeroContainer = styled.div`
+  background-image: url('/public/bg-hero-desktop.svg');
   height: 650px;
   margin: auto;
   max-width: ${({ theme }) => theme.container.width};
@@ -20,12 +21,12 @@ export const HeroContainer = styled.div`
 `;
 
 export const Section = styled.div`
-  margin-top: 20px;
+  margin-top: 70px;
   display: grid;
   grid-template-columns: auto 750px;
   justify-content: 'space-between';
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;

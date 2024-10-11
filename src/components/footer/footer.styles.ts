@@ -21,11 +21,12 @@ export const Footer = styled.footer`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Section = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
   padding: 20px;
+  margin-top: 20px;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -39,6 +40,8 @@ export const Copy = styled.div`
   margin-top: 50px;
   text-align: right;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 1024px) {
     text-align: center;
