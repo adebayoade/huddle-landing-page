@@ -14,10 +14,6 @@ export default function Footer() {
         <Logo />
         <Wrapper>
           <Stack spacing="30px" direction="column">
-            {/* <div> */}
-
-            {/* </div> */}
-
             <Stack spacing="20px">
               <img src="/icon-location.svg" alt="" />
               <p>

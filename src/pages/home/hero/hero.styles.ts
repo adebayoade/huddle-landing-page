@@ -5,7 +5,6 @@ export const Header = styled.header`
 `;
 
 export const HeroContainer = styled.div`
-  background-image: url('/public/bg-hero-desktop.svg');
   height: 650px;
   margin: auto;
   max-width: ${({ theme }) => theme.container.width};
