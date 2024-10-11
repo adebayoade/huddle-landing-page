@@ -15,7 +15,7 @@ export default function Footer() {
         <Section>
           <Stack spacing="30px" direction="column">
             <Stack spacing="20px">
-              <img src="/icon-location.svg" alt="" />
+              <img src="/icon-location.svg" alt="location icon" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua
@@ -23,12 +23,12 @@ export default function Footer() {
             </Stack>
 
             <Stack alignItems="center" spacing="20px">
-              <img src="/icon-phone.svg" alt="" />
+              <img src="/icon-phone.svg" alt="phone icon" />
               <a href="tel:+15431234567">+1-543-123-4567</a>
             </Stack>
 
             <Stack alignItems="center" spacing="20px">
-              <img src="/icon-email.svg" alt="" />
+              <img src="/icon-email.svg" alt="email icon" />
               <a href="mailto:example@huddle.com">example@huddle.com</a>
             </Stack>
           </Stack>

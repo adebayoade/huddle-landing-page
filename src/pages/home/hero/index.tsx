@@ -23,7 +23,7 @@ export default function Hero() {
             <Button>Get Started For Free</Button>
           </Stack>
 
-          <HeroImg src="/illustration-mockups.svg" />
+          <HeroImg src="/illustration-mockups.svg" alt='illustration icon' />
         </Section>
       </HeroContainer>
     </Header>

@@ -53,6 +53,5 @@ export const Section = styled.div`
 
 export const HeroImg = styled.img`
   width: 100%;
-  alt: 'illustration';
   margin-left: auto;
 `;
