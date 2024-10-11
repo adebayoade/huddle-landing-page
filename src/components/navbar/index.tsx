@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import Button from '../button';
-import Logo from '../logo';
+import Button from '../ui/button';
+import Logo from '../ui/logo';
 
 const NavContainer = styled.nav`
   display: flex;

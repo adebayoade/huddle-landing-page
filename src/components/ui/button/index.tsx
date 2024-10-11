@@ -8,7 +8,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 // Styled Button component
 const Button = styled.button<ButtonProps>`
-  padding: 15px 40px;
+  padding: 15px 30px;
   font-size: 15px;
   border-radius: 9999px;
   font-weight: 600;

@@ -15,6 +15,7 @@ const Stack = styled.div<StackProps>`
   justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
   align-items: ${({ alignItems }) => alignItems || 'stretch'};
   flex-wrap: ${({ wrap }) => wrap || 'nowrap'};
+  width: 100%;
 `;
 
 export default Stack;
