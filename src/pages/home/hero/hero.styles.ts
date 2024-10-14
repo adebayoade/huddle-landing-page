@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeroSection = styled.section`
-  background-color: ${({ theme }) => theme.colors.poleCyan};
+  background-color: ${({ theme }) => theme.colors.paleCyan};
 `;
 
 export const HeroContainer = styled.div`

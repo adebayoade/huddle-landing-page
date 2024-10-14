@@ -4,12 +4,12 @@ type BenefitsWrapperProps = {
   direction?: string;
 };
 
-export const BenefitsContainer = styled.div`
+export const BenefitsSection = styled.section`
   display: flex;
   gap: 20px;
   max-width: ${({ theme }) => theme.container.width};
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 250px;
   padding: 20px;
 `;

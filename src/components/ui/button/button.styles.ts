@@ -56,7 +56,7 @@ export const Button = styled.button<ButtonProps>`
   ${({ variant }) =>
     variant === 'outlined' &&
     css`
-      background-color: transparent;
+      background-color: white;
       /* color: ${props => props.theme.colors.primary}; */
       /* border-color: ${props => props.theme.colors.primary}; */
 
