@@ -1,27 +1,28 @@
 import Stack from '../../../components/ui/stack';
 import { BENEFITS } from '../../../constants/benefits';
 import Card from '../../../components/ui/card';
-import { BenefitImg, BenefitWrapper, BenefitContainer } from './benefits.styles';
+import { BenefitImg, BenefitsWrapper, BenefitsContainer } from './benefits.styles';
+import { SecondTitle } from '../../../globalStyles';
 
 export default function Benefits() {
   return (
-    <BenefitContainer>
+    <BenefitsContainer>
       <Stack spacing="30px" direction="column">
         {BENEFITS.map(benefit => (
           <Card key={benefit.id}>
-            <BenefitWrapper direction={benefit.id === 2 ? 'row-reverse' : 'row'}>
+            <BenefitsWrapper direction={benefit.id === 2 ? 'row-reverse' : 'row'}>
               <Stack spacing="20px" direction="column">
-                <h1>{benefit.title}</h1>
-                <p>{benefit.body}</p>
+                <SecondTitle>{benefit.title}</SecondTitle>
+                <span>{benefit.body}</span>
               </Stack>
 
               <div>
                 <BenefitImg alt="illustration" src={benefit.image} />
               </div>
-            </BenefitWrapper>
+            </BenefitsWrapper>
           </Card>
         ))}
       </Stack>
-    </BenefitContainer>
+    </BenefitsContainer>
   );
 }

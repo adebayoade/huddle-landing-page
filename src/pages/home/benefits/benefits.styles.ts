@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-type BenefitWrapperProps = {
+type BenefitsWrapperProps = {
   direction?: string;
 };
 
-export const BenefitContainer = styled.div`
+export const BenefitsContainer = styled.div`
   display: flex;
   gap: 20px;
   max-width: ${({ theme }) => theme.container.width};
@@ -14,33 +14,30 @@ export const BenefitContainer = styled.div`
   padding: 20px;
 `;
 
-export const BenefitWrapper = styled.div<BenefitWrapperProps>`
+export const BenefitsWrapper = styled.div<BenefitsWrapperProps>`
   display: flex;
   justify-content: space-between;
   gap: 40px;
   align-items: center;
   flex-direction: ${props => props.direction};
 
+  span {
+    line-height: 1.5;
+    color: #9ca3af;
+  }
+
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
     flex-direction: column;
 
-    h1 {
-      font-size: 20px;
-    }
-
-    h1,
-    p {
+    h2,
+    span {
       text-align: center;
     }
   }
 
   & > div {
     flex: 1;
-  }
-
-  p {
-    color: #9ca3af;
   }
 `;
 

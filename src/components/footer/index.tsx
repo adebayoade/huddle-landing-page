@@ -3,16 +3,16 @@ import Logo from '../ui/logo';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Community from '../../pages/home/community';
-import { Copy, Footer as StyledFooter, Section } from './footer.styles';
-import Container from '../ui/container';
+import { Copy, FooterSection, ContentWrapper } from './footer.styles';
+import { Container } from '../../globalStyles';
 
 export default function Footer() {
   return (
-    <StyledFooter>
+    <FooterSection>
       <Community />
       <Container>
         <Logo variant="white" />
-        <Section>
+        <ContentWrapper>
           <Stack spacing="30px" direction="column">
             <Stack spacing="20px">
               <img src="/icon-location.svg" alt="location icon" />
@@ -58,16 +58,14 @@ export default function Footer() {
               <FaInstagram size={25} />
             </Link>
           </Stack>
-        </Section>
+        </ContentWrapper>
 
         <Copy>
-          <Link className="has-line-after" to="mailto:me@adebayoade.com">
-            me@adebayoade.com
-          </Link>
+          <Link to="mailto:me@adebayoade.com">me@adebayoade.com</Link>
           <br />
           <span>&copy; Copyright 2018 Huddle. All rights reserved.</span>
         </Copy>
       </Container>
-    </StyledFooter>
+    </FooterSection>
   );
 }

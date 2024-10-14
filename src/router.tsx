@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
-
-import Home from './pages/home';
 import AppLayout from './layouts/app-layout';
+import Home from './pages/home';
 
 const router = createBrowserRouter([
   {
@@ -12,13 +11,11 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
-
-      // 404 page
-      {
-        path: '/*',
-        element: <p>Not found</p>,
-      },
     ],
+  },
+  {
+    path: '/*',
+    element: <p>Not found!</p>,
   },
 ]);
 

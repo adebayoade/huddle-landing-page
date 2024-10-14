@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
+export const HeroSection = styled.section`
   background-color: ${({ theme }) => theme.colors.poleCyan};
 `;
 
 export const HeroContainer = styled.div`
-  background-image: url('/public/bg-hero-desktop.svg');
+  background-image: url('/bg-hero-desktop.svg');
   height: 650px;
   margin: auto;
   max-width: ${({ theme }) => theme.container.width};
@@ -20,7 +20,7 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const Section = styled.div`
+export const ContentWrapper = styled.div`
   margin-top: 70px;
   display: grid;
   grid-template-columns: auto 750px;

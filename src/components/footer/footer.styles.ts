@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export const Footer = styled.footer`
+export const FooterSection = styled.footer`
   background-color: ${({ theme }) => theme.colors.darkCyan};
-  padding: 150px 0 40px 0;
+  padding: 150px 0 10px 0;
   color: #ffff;
   position: relative;
 
@@ -21,11 +21,10 @@ export const Footer = styled.footer`
   }
 `;
 
-export const Section = styled.div`
+export const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 50px;
-  /* padding: 20px 0; */
   margin-top: 20px;
 
   @media (max-width: 1024px) {
