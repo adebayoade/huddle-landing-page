@@ -4,7 +4,7 @@ import Card from '../../../components/ui/card';
 export const CommunityContainer = styled(Card)`
   background-color: white;
   z-index: 1;
-  max-width: 500px;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   gap: 20px;

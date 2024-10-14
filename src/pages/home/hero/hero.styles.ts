@@ -32,22 +32,9 @@ export const ContentWrapper = styled.div`
     grid-template-columns: 1fr;
   }
 
-  h1 {
-    font-size: 50px;
-    margin: 0;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-  }
-
   p {
     font-weight: 600;
     line-height: 1.5;
-  }
-
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 30px;
-    }
   }
 `;
 
